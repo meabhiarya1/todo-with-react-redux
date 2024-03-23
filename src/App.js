@@ -1,11 +1,10 @@
-import "./App.css";
+import "./index.css";
+import TodoForm from "./TodoForm";
 
 function App() {
   return (
     <>
-      <div className="flex justify-center items-center">
-        <h1>Todo</h1>
-      </div>
+      <TodoForm />
     </>
   );
 }
