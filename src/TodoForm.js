@@ -21,6 +21,7 @@ const TodoForm = () => {
         <input
           type="text"
           placeholder="Enter Todo title"
+          className=""
           value={todo.title}
           onChange={(e) => setTodo({ ...todo, title: e.target.value })}
         />
@@ -34,7 +35,7 @@ const TodoForm = () => {
             setTodo({ ...todo, desc: e.target.value });
           }}
         />
-        <button type="submit" className="">
+        <button type="submit" className="bg-white-100">
           Add Todo
         </button>
       </form>
