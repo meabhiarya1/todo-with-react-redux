@@ -2,9 +2,11 @@ import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <h1>Abhishek</h1>
-    </div>
+    <>
+      <div className="flex justify-center items-center">
+        <h1>Todo</h1>
+      </div>
+    </>
   );
 }
 
