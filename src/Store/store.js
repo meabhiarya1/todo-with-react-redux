@@ -2,7 +2,7 @@ import { configureStore } from "@reduxjs/toolkit";
 import todoDataSliceActionsReducer from "./todoRedux";
 
 const store = configureStore({
-  reducer: todoDataSliceActionsReducer,
+  reducer: todoDataSliceActionsReducer
 });
 
 export default store;

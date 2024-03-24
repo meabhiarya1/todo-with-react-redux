@@ -1,17 +1,17 @@
 import { createSlice } from "@reduxjs/toolkit";
-
 const todoDataSlice = createSlice({
   name: "todoStateHandler",
-  initialState: [],
+  initialState: [], //todoDataSliceActionsReducer
   reducers: {
     addTodo(state, action) {
       // console.log(state)
-      // console.log(action.payload)
-      return state = action.payload;
+      console.log(action.payload)
+      return state =[...state, action.payload]
     },
     deleteTodo(state, action) {
       console.log(action.payload);
     },
+    
   },
 });
 

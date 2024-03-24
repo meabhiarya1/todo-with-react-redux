@@ -42,21 +42,23 @@ const todoData = [
 
 function App() {
   const dispatch = useDispatch();
-  const stateTodo = useSelector(state=>state);
-  console.log(stateTodo)
+  const stateTodo = useSelector((state) => state);
+  console.log(stateTodo);
 
   const handle = () => {
-    dispatch(todoDataSliceActions.addTodo(todoData));
+    todoData.forEach((current) => {
+      dispatch(todoDataSliceActions.addTodo(current));
+    });
   };
 
-  const handledel = () => {
+  const handleDel = () => {
     dispatch(todoDataSliceActions.deleteTodo("stringdelet"));
   };
 
   return (
     <>
       <button onClick={handle}>Add</button>
-      <button onClick={handledel}>del</button>
+      <button onClick={handleDel}>del</button>
       <TodoForm />
       <TodoList />
     </>
